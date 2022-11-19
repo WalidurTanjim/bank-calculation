@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Baap Er Bank (Funtional Advanced)</title>
+
+     <!-- tailwind css cdn -->
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <header>
+          <h1 class="text-4xl text-center my-6">Welcome to your <span class="font-medium text-amber-700">Baap Er Bank (Functional Advanced)</span>!!!</h1>
+     </header>
+     
+     <main class="bg-red-50">
+          <section class="container mx-auto py-6">
+               <div class="grid gap-4 grid-cols-3 grid-rows-1 mb-6">
+                    <div class="display-amount deposit p-4 rounded bg-green-400 shadow-lg">
+                         <h2 class="text-xl">Deposit</h2>
+                         <h1 class="text-2xl">$<span id="deposit-amount">00</span></h1>
+                    </div>
+
+                    <div class="display-amount withdraw p-4 rounded bg-pink-400 shadow-lg">
+                         <h2 class="text-xl">Withdraw</h2>
+                         <h1 class="text-2xl">$<span id="withdraw-amount">00</span></h1>
+                    </div>
+
+                    <div class="display-amount balance p-4 rounded bg-violet-400 shadow-lg">
+                         <h2 class="text-xl">Balance</h2>
+                         <h1 class="text-2xl">$<span id="total-balance">1240</span></h1>
+                    </div>
+               </div>
+
+               <div class="grid gap-4 grid-cols-2 grid-rows-1">
+                    <div class="deposit-amount bg-teal-200 rounded p-4 shadow-lg">
+                         <h2 class="text-xl mb-3">Deposit money:</h2>
+                         <input type="text" id="deposit-field" placeholder="Deposit money" class="rounded px-2 py-2 shadow-md">
+                         <button id="deposit-btn" class="bg-indigo-400 px-3 py-2 rounded font-medium shadow-md">Deposit</button>
+                    </div>
+
+                    <div class="withdraw-amount bg-cyan-200 rounded p-4 shadow-lg">
+                         <h2 class="text-xl mb-3">Withdraw money:</h2>
+                         <input type="text" id="withdraw-field" placeholder="Withdraw money" class="rounded px-2 py-2 shadow-md">
+                         <button id="withdraw-btn" class="bg-indigo-400 px-3 py-2 rounded font-medium shadow-md">Withdeaw</button>
+                    </div>
+               </div>
+          </section>
+     </main>
+
+     <script src="js/utilities.js"></script>
+     <script src="js/deposit.js"></script>
+     <script src="js/withdraw.js"></script>
+</body>
+</html>
